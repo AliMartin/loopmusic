@@ -1,6 +1,6 @@
 <?php
 
-$settings['update_free_access'] = FALSE;
+$settings['update_free_access'] = TRUE;
 $settings['file_private_path'] = DRUPAL_ROOT . '/private-files';
 $settings['file_temp_path'] = DRUPAL_ROOT . '/tmp';
 
