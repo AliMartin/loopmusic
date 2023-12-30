@@ -9,8 +9,8 @@ $settings['file_temp_path'] = DRUPAL_ROOT . '/tmp';
 $settings['trusted_host_patterns'] = [
   '^loopmusicuk\.com$',
   '^.+\.loopmusicuk\.com$',
-  '^loopmusicuk\.hyperluminal\.co\.uk$',
-  '^.+\.loopmusicuk\.hyperluminal\.co\.uk$',
+  '^loopmusic\.hyperluminal\.co\.uk$',
+  '^.+\.loopmusic\.hyperluminal\.co\.uk$',
   '^loopmusic\.ddev\.site$',
   '^.+\.loopmusic\.ddev\.site$',
 ];
