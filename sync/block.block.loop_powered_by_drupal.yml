@@ -1,0 +1,22 @@
+uuid: c570578d-395e-4395-ba02-422d489dcf29
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - loop
+_core:
+  default_config_hash: WrARVqb7kgCCarJfX-ZYhwWBKwv0ZxWFR-P8D_qei2o
+id: loop_powered_by_drupal
+theme: loop
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
