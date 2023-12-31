@@ -42,6 +42,10 @@
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
+
+    {# Load FontAwesome #}
+    <script src="https://kit.fontawesome.com/882267a28e.js" crossorigin="anonymous"></script>
+
   </head>
   <body{{ attributes.addClass(body_classes) }}>
     {#

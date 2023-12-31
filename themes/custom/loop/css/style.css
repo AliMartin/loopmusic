@@ -12870,10 +12870,82 @@ code {
   overflow-y: auto;
 }
 
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+footer .region-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#copyright {
+  margin-bottom: 20px;
+}
+#copyright .text {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+#copyright img {
+  width: 200px;
+  height: auto;
+}
+
+#footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+#footer-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+#footer-links a span {
+  display: none;
+}
+#footer-links a:hover, #footer-links a:focus, #footer-links a:active {
+  color: #D90479;
+  background-color: #ffffff;
+}
+
+#hyperluminal .text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+#hyperluminal img {
+  width: 90px;
+  height: auto;
+}
+
 header {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 15px;
+}
+
+.region-nav-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 #block-loop-main-navigation {
@@ -12882,7 +12954,7 @@ header {
 }
 #block-loop-main-navigation > ul {
   flex-direction: row;
-  gap: 30px;
+  gap: 20px;
   justify-content: center !important;
   /* Underline styles */
   /* Scale from center */
@@ -12925,13 +12997,111 @@ header {
   transform: scale(1);
 }
 
+#enquiry-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-family: "Comfortaa", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  top: -2px;
+}
+#enquiry-menu i {
+  margin-right: 5px;
+}
+#enquiry-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1;
+  padding: 9px 14px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+}
+#enquiry-menu a:hover, #enquiry-menu a:focus {
+  background-color: #ffffff;
+  color: #D90479;
+}
+
+@media only screen and (max-width: 991px) {
+  nav#block-loop-main-navigation {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #enquiry-menu a span,
+.menu-container {
+    display: none;
+  }
+  #enquiry-menu a {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  #enquiry-menu i {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #block-loop-responsivemenumobileicon {
+    display: none;
+  }
+}
+#block-loop-responsivemenumobileicon span.label {
+  display: none;
+}
+#block-loop-responsivemenumobileicon .responsive-menu-toggle-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  top: -2px;
+}
+#block-loop-responsivemenumobileicon .responsive-menu-toggle-icon::before,
+#block-loop-responsivemenumobileicon .responsive-menu-toggle-icon::after,
+#block-loop-responsivemenumobileicon .responsive-menu-toggle-icon span.icon {
+  width: 16px;
+  height: 1px;
+  left: inherit;
+}
+#block-loop-responsivemenumobileicon .responsive-menu-toggle-icon::before {
+  top: 12px;
+}
+#block-loop-responsivemenumobileicon .responsive-menu-toggle-icon span.icon {
+  top: 17px;
+}
+#block-loop-responsivemenumobileicon .responsive-menu-toggle-icon::after {
+  top: 22px;
+}
+
+body.mm-wrapper_opening #block-loop-responsivemenumobileicon .responsive-menu-toggle-icon::before {
+  top: 17px;
+}
+body.mm-wrapper_opening #block-loop-responsivemenumobileicon .responsive-menu-toggle-icon::after {
+  top: 17px;
+}
+
+ul.mm-listview li {
+  font-family: "Comfortaa", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .background-image-wrapper #block-loop-backgroundimage .background-image {
   background-position: top center;
   top: 0;
 }
 
 main .region-content {
-  margin-top: 50vh;
+  max-width: 850px;
+  margin: 50vh auto 90px auto;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 30px;
   border-radius: 20px;
