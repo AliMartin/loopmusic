@@ -35,7 +35,7 @@ ul.nav-tabs {
       text-align: center;
       max-width: 850px;
       margin: 50vh auto 90px auto;
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgba(0,0,0,0.4);
       padding: 30px;
       border-radius: 20px;
     }
@@ -45,7 +45,11 @@ ul.nav-tabs {
 
 // Multimedia pages
 .page-node-type-multimedia {
-  text-align: center;
+  main {
+    .region-content {
+      text-align: center;
+    }
+  }
 }
 
 .instagram-button {

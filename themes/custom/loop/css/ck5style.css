@@ -12193,11 +12193,11 @@ a > .ck-content code {
   text-align: center;
   max-width: 850px;
   margin: 50vh auto 90px auto;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 30px;
   border-radius: 20px;
 }
-.ck-content .page-node-type-multimedia {
+.ck-content .page-node-type-multimedia main .region-content {
   text-align: center;
 }
 .ck-content .instagram-button {
@@ -12308,6 +12308,30 @@ a > .ck-content code {
 .ck-content .ui-dialog .ui-dialog-titlebar-close {
   box-shadow: inherit;
   --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+.ck-content .view-video-page {
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+.ck-content .view-video-page .view-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.ck-content .view-video-page .media--type-remote-video {
+  margin: 0;
+}
+.ck-content .view-video-page .media--type-remote-video img {
+  border-radius: 10px 10px 0 0;
+}
+.ck-content .view-video-page .field--name-name {
+  max-width: 400px;
+  font-family: "Comfortaa", sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=ck5style.css.map */
