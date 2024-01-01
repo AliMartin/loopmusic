@@ -40,10 +40,58 @@ body.mm-wrapper_opening {
 }
 
 
-ul.mm-listview {
-  li {
-    font-family: $headings-font-family;
-    line-height: 1;
-    text-transform: uppercase;
+
+
+
+.mm-menu_theme-white {
+  background-color: $white;
+  --mm-color-background: $white;
+  color: $black;
+
+  .mm-panels {
+    .mm-navbar:before {
+      content: '';
+      background: url("/themes/custom/loop/images/logo-colour.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      display: block;
+      position: relative;
+      left: 35%;
+      width: 30%;
+      height: 100px;
+    } 
+
+    .mm-navbar {
+      border-bottom: none;
+    }
+
+    .mm-navbar a {
+      display: none;
+    }
+  }
+
+  ul.mm-listview {
+    li.mm-listitem {
+      font-family: $headings-font-family;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $black;
+      --mm-color-text: $black;
+      text-align: center;
+    }
+    li.mm-listitem::after {
+      display: none;
+    }
+    .mm-listitem__text {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .mm-listitem_selected > .mm-listitem__text {
+      color: $white;
+      background: #cc1b38;
+    }
   }
 }
+
+

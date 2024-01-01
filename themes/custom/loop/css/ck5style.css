@@ -11909,7 +11909,7 @@ a > .ck-content code {
 .ck-content footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .ck-content footer .region-footer {
   display: flex;
@@ -11975,6 +11975,7 @@ a > .ck-content code {
 .ck-content .btn, .ck-content button.link, .ck-content .button, .ck-content a.button, .ck-content .node-preview-container .node-preview-backlink {
   font-family: "Comfortaa", sans-serif;
   text-transform: uppercase;
+  background-color: #D90479;
   border: inherit;
   border-radius: 20px;
   padding: 10px 16px;
@@ -12128,10 +12129,47 @@ a > .ck-content code {
 .ck-content body.mm-wrapper_opening #block-loop-responsivemenumobileicon .responsive-menu-toggle-icon::after {
   top: 17px;
 }
-.ck-content ul.mm-listview li {
+.ck-content .mm-menu_theme-white {
+  background-color: #ffffff;
+  --mm-color-background: $white;
+  color: #000000;
+}
+.ck-content .mm-menu_theme-white .mm-panels .mm-navbar:before {
+  content: "";
+  background: url("/themes/custom/loop/images/logo-colour.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  display: block;
+  position: relative;
+  left: 35%;
+  width: 30%;
+  height: 100px;
+}
+.ck-content .mm-menu_theme-white .mm-panels .mm-navbar {
+  border-bottom: none;
+}
+.ck-content .mm-menu_theme-white .mm-panels .mm-navbar a {
+  display: none;
+}
+.ck-content .mm-menu_theme-white ul.mm-listview li.mm-listitem {
   font-family: "Comfortaa", sans-serif;
   line-height: 1;
   text-transform: uppercase;
+  color: #000000;
+  --mm-color-text: $black;
+  text-align: center;
+}
+.ck-content .mm-menu_theme-white ul.mm-listview li.mm-listitem::after {
+  display: none;
+}
+.ck-content .mm-menu_theme-white ul.mm-listview .mm-listitem__text {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ck-content .mm-menu_theme-white ul.mm-listview .mm-listitem_selected > .mm-listitem__text {
+  color: #ffffff;
+  background: #cc1b38;
 }
 .ck-content .background-image-wrapper #block-loop-backgroundimage .background-image {
   background-position: top center;
@@ -12140,17 +12178,82 @@ a > .ck-content code {
 .ck-content ul.nav-tabs, .ck-content .media-library-view--widget ul.view-header {
   justify-content: center;
 }
-.ck-content main .region-content {
+.ck-content .node__content .field--name-field-image,
+.ck-content .node__content .media--type-remote-video {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.ck-content .node__content .field--name-field-image img,
+.ck-content .node__content .field--name-field-image iframe,
+.ck-content .node__content .media--type-remote-video img,
+.ck-content .node__content .media--type-remote-video iframe {
+  border-radius: 10px;
+}
+.ck-content .page-node-type-article main .region-content {
+  text-align: center;
   max-width: 850px;
   margin: 50vh auto 90px auto;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 30px;
   border-radius: 20px;
 }
+.ck-content .page-node-type-multimedia {
+  text-align: center;
+}
+.ck-content .instagram-button {
+  margin: 30px auto;
+}
+.ck-content #block-loop-curatorfeed {
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+.ck-content #block-loop-curatorfeed article {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.ck-content #block-loop-curatorfeed article .crt-post-border {
+  border: inherit;
+}
+.ck-content #block-loop-curatorfeed article .crt-social-icon svg {
+  color: #ffffff;
+}
+.ck-content #block-loop-curatorfeed article .crt-post-fullname a {
+  color: #ffffff;
+}
+.ck-content #block-loop-curatorfeed article .crt-post-title {
+  color: #ffffff;
+}
+.ck-content #block-loop-curatorfeed article .crt-post-text {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+.ck-content #block-loop-curatorfeed article .crt-post-text a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.ck-content #block-loop-curatorfeed article .crt-post-text a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.ck-content #block-loop-curatorfeed article .crt-post-footer {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.ck-content #block-loop-curatorfeed article .crt-post-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 1;
+}
+.ck-content #block-loop-curatorfeed article .crt-post-share {
+  display: none;
+}
 .ck-content body.path-webform main .region-content,
 .ck-content body.page-node-type-webform main .region-content {
   max-width: 650px;
   text-align: center;
+  margin: 50vh auto 90px auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 20px;
 }
 .ck-content .form-control::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);

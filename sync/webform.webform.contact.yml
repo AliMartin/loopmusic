@@ -323,8 +323,8 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
+      subject: '* Enquiry from L.O.O.P. website *'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
