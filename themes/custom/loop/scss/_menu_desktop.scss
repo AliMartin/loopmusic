@@ -8,6 +8,8 @@
 #block-loop-main-navigation {
   font-family: $headings-font-family;
   text-transform: uppercase;
+  position: relative;
+  top: 2px;
 
   > ul {
     flex-direction: row;
@@ -67,8 +69,6 @@
   font-family: $headings-font-family;
   line-height: 1;
   text-transform: uppercase;
-  position: relative;
-  top: -2px;
 
   i {
     margin-right: 5px;
@@ -98,11 +98,11 @@
 
 @media only screen and (max-width : 767px) {
 
-  #enquiry-menu a span,
   .menu-container {
     display: none;
   }
 
+  /*
   #enquiry-menu a {
     display: flex;
     width: 36px;
@@ -115,4 +115,5 @@
   #enquiry-menu i {
     margin: 0;
   }
+  */
 }

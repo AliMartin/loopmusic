@@ -1,0 +1,69 @@
+body.path-webform,
+body.page-node-type-webform {
+  main {
+    .region-content {
+      max-width: 650px;
+      text-align: center;
+    }
+  }
+}
+
+// Placeholder text
+.form-control::-webkit-input-placeholder	{color: rgba(255,255,255,0.5);} /* Chrome/Opera/Safari */
+.form-control::-moz-placeholder 					{color: rgba(255,255,255,0.5);} /* Firefox 19+ */
+.form-control:-ms-input-placeholder 			{color: rgba(255,255,255,0.5);} /* IE 10+ */
+.form-control:-moz-placeholder 						{color: rgba(255,255,255,0.5);} /* Firefox 18- */
+
+form > div {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.form-item {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-control {
+  background-color: inherit;
+  border-radius: 20px;
+
+  &:focus,
+  &:active {
+    background-color: inherit;
+    box-shadow: inherit;
+    border: 1px solid $primary;
+  }
+}
+
+.form-select {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+
+// Modal thank you popup
+.ui-widget.ui-widget-content {
+  border: inherit;
+  border-radius: 10px;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  color: $white;
+  background-color: rgba(0,0,0,0.8);
+  border: inherit;
+  border-radius: 10px 10px 0 0;
+}
+
+.ui-widget-content {
+  color: $white;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.btn-close,
+.ui-dialog .ui-dialog-titlebar-close {
+  box-shadow: inherit;
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}

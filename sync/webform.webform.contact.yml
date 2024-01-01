@@ -17,27 +17,100 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 categories: {  }
-elements: |
-  name:
-    '#title': 'Your Name'
-    '#type': textfield
-    '#required': true
-    '#default_value': '[current-user:display-name]'
-  email:
-    '#title': 'Your Email'
-    '#type': email
-    '#required': true
-    '#default_value': '[current-user:mail]'
-  subject:
-    '#title': Subject
-    '#type': textfield
-    '#required': true
-    '#test': 'Testing contact webform from [site:name]'
-  message:
-    '#title': Message
-    '#type': textarea
-    '#required': true
-    '#test': 'Please ignore this email.'
+elements: |-
+  your_details:
+    '#type': container
+    '#align_items': center
+    your_details_title:
+      '#type': processed_text
+      '#text': '<h2>Your details</h2>'
+      '#format': full_html
+    first_name:
+      '#type': textfield
+      '#title': 'First name'
+      '#title_display': invisible
+      '#placeholder': 'First name'
+      '#required': true
+    last_name:
+      '#type': textfield
+      '#title': 'Last name'
+      '#title_display': invisible
+      '#placeholder': 'Last name'
+      '#required': true
+    company:
+      '#type': textfield
+      '#title': Company
+      '#title_display': invisible
+      '#placeholder': Company
+    email:
+      '#type': email
+      '#title': Email
+      '#title_display': invisible
+      '#placeholder': 'Email address'
+      '#required': true
+    mobile:
+      '#type': textfield
+      '#title': Mobile
+      '#title_display': invisible
+      '#placeholder': 'Mobile number'
+      '#required': true
+    country:
+      '#type': textfield
+      '#title': Country
+      '#title_display': invisible
+      '#placeholder': Country
+      '#required': true
+  event_details:
+    '#type': container
+    event_details_title:
+      '#type': processed_text
+      '#text': '<h2>Event details</h2>'
+      '#format': full_html
+    event_date:
+      '#type': date
+      '#title': 'Event date'
+      '#title_display': invisible
+      '#placeholder': Date
+      '#required': true
+    event_venue:
+      '#type': textfield
+      '#title': 'Event venue'
+      '#title_display': invisible
+      '#placeholder': Venue
+    event_city:
+      '#type': textfield
+      '#title': 'Event city'
+      '#title_display': invisible
+      '#placeholder': City
+    event_type:
+      '#type': webform_select_other
+      '#title': 'Event type'
+      '#title_display': invisible
+      '#options':
+        wedding: Wedding
+        corporate: Corporate
+        cocktail_party: 'Cocktail party'
+        dinner: Dinner
+        fundraiser: Fundraiser
+        gala: Gala
+        promo_event: 'Promo event'
+        rehearsal_dinner: 'Rehearsal dinner'
+        bar_bat_mitzvah: 'Bar/Bat Mitzvah'
+        private_event: 'Private event'
+        birthday_party: 'Birthday party'
+        anniversary: Anniversary
+        holiday_party: 'Holiday party'
+      '#empty_option': 'Event type'
+    number_of_guests:
+      '#type': textfield
+      '#title': 'Number of guests'
+      '#title_display': invisible
+      '#placeholder': 'Number of guests'
+    message:
+      '#type': textarea
+      '#title': Message
+      '#title_display': invisible
+      '#placeholder': 'Please feel free to add any other details.'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -111,7 +184,7 @@ settings:
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
-  wizard_progress_bar: true
+  wizard_progress_bar: false
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
@@ -146,10 +219,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
+  confirmation_type: modal
   confirmation_url: '<front>'
-  confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_title: 'Thank you'
+  confirmation_message: '<p>Thank you for your interest in working with L.O.O.P. – we’ll be back to you within the next 24 hours.</p>'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -231,7 +304,7 @@ handlers:
     handler_id: email_confirmation
     label: 'Email confirmation'
     notes: ''
-    status: true
+    status: false
     conditions: {  }
     weight: 1
     settings:
@@ -274,27 +347,27 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: iain@stiffpromotions.co.uk
       to_options: {  }
-      bcc_mail: ''
+      bcc_mail: info@alimartin.com
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
+      from_mail: noreply@loopmusic.uk
       from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
+      from_name: '* L.O.O.P. website *'
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
+      subject: '* Enquiry from L.O.O.P. website *'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
       exclude_attachments: false
-      html: true
+      html: false
       attachments: false
       twig: false
       theme_name: ''
