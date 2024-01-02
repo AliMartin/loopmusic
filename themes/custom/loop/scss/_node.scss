@@ -65,6 +65,17 @@ ul.nav-tabs {
   article {
     background-color: rgba(0,0,0,0.4);
     border-radius: 10px;
+    border-color: inherit;
+    border-width: inherit;
+
+    > div {
+      border: 1px solid $white !important;
+      border-radius: 10px;
+    }
+
+    .crt-image {
+      border-radius: 10px 10px 0 0;
+    }
 
     .crt-post-border {
       border: inherit;
@@ -97,6 +108,7 @@ ul.nav-tabs {
 
     .crt-post-footer {
       background-color: rgba(0,0,0,0.4);
+      border-radius: 0 0 10px 10px;
       a {
         color: $white;
         text-decoration: none;
