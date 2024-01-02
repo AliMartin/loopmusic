@@ -101,6 +101,7 @@ elements: |-
         anniversary: Anniversary
         holiday_party: 'Holiday party'
       '#empty_option': 'Event type'
+      '#select2': true
     number_of_guests:
       '#type': textfield
       '#title': 'Number of guests'
