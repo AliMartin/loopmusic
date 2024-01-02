@@ -13283,6 +13283,18 @@ ul.nav-tabs, .media-library-view--widget ul.view-header {
   margin: 30px auto;
 }
 
+.page-node-type-gallery main .region-content {
+  text-align: center;
+}
+.page-node-type-gallery main .node__content ul {
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+.page-node-type-gallery main .node__content li {
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
 #block-loop-curatorfeed {
   margin-top: 30px;
   margin-bottom: 90px;

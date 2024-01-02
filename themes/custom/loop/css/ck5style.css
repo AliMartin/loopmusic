@@ -12287,6 +12287,17 @@ a > .ck-content code {
 .ck-content .instagram-button {
   margin: 30px auto;
 }
+.ck-content .page-node-type-gallery main .region-content {
+  text-align: center;
+}
+.ck-content .page-node-type-gallery main .node__content ul {
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+.ck-content .page-node-type-gallery main .node__content li {
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
 .ck-content #block-loop-curatorfeed {
   margin-top: 30px;
   margin-bottom: 90px;

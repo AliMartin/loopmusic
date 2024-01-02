@@ -1,0 +1,15 @@
+uuid: 03798925-cb85-47e2-bd31-7284e82ad169
+langcode: en-gb
+status: true
+dependencies: {  }
+name: gallery_thumbnail
+label: 'Gallery thumbnail'
+effects:
+  b592e46f-af8d-49b7-b743-fb843e0a704a:
+    uuid: b592e46f-af8d-49b7-b743-fb843e0a704a
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: false
