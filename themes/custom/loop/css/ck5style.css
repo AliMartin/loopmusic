@@ -12262,6 +12262,12 @@ a > .ck-content code {
 .ck-content ul.nav-tabs, .ck-content .media-library-view--widget ul.view-header {
   justify-content: center;
 }
+.ck-content .path-user main {
+  margin-bottom: 120px;
+}
+.ck-content .path-user main .region-content {
+  text-align: center;
+}
 .ck-content .node__content .field--name-field-image,
 .ck-content .node__content .media--type-remote-video {
   margin-top: 30px;
@@ -12273,7 +12279,8 @@ a > .ck-content code {
 .ck-content .node__content .media--type-remote-video iframe {
   border-radius: 10px;
 }
-.ck-content .page-node-type-article main .region-content {
+.ck-content .page-node-type-article main .region-content,
+.ck-content .page-node-type-landing-page main .region-content {
   text-align: center;
   max-width: 850px;
   margin: 50vh auto 90px auto;

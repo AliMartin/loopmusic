@@ -13,6 +13,18 @@ ul.nav-tabs {
 }
 
 
+// User
+.path-user {
+  main {
+    margin-bottom: 120px;
+
+    .region-content {
+      text-align: center;
+    }
+  }
+}
+
+
 // Inline videos
 .node__content {
   .field--name-field-image,
@@ -29,7 +41,8 @@ ul.nav-tabs {
 
 
 // General article pages
-.page-node-type-article {
+.page-node-type-article,
+.page-node-type-landing-page {
   main {
     .region-content {
       text-align: center;

@@ -13254,6 +13254,13 @@ ul.nav-tabs, .media-library-view--widget ul.view-header {
   justify-content: center;
 }
 
+.path-user main {
+  margin-bottom: 120px;
+}
+.path-user main .region-content {
+  text-align: center;
+}
+
 .node__content .field--name-field-image,
 .node__content .media--type-remote-video {
   margin-top: 30px;
@@ -13266,7 +13273,8 @@ ul.nav-tabs, .media-library-view--widget ul.view-header {
   border-radius: 10px;
 }
 
-.page-node-type-article main .region-content {
+.page-node-type-article main .region-content,
+.page-node-type-landing-page main .region-content {
   text-align: center;
   max-width: 850px;
   margin: 50vh auto 90px auto;

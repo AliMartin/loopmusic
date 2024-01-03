@@ -6,10 +6,8 @@ dependencies:
     - filter.format.restricted_html
   module:
     - background_image
-    - contact
     - filter
     - media
-    - search
     - system
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
@@ -19,8 +17,6 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
-  - 'access site-wide contact form'
-  - 'search content'
   - 'use text format restricted_html'
   - 'view background image'
   - 'view media'

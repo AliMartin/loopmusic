@@ -41,10 +41,10 @@ content:
       responsive_image_style: ''
       use_theme_field: false
       box_style: gallery
-      image_style: gallery
+      image_style: gallery_thumbnail
       media_switch: colorbox
       ratio: ''
-      thumbnail_style: gallery_thumbnail
+      thumbnail_style: ''
       grid: '4'
       grid_medium: '4'
       grid_small: '2'
