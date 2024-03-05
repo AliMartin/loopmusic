@@ -32,7 +32,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 60px;
+  margin-bottom: 15px;
 
   a {
     display: flex;
@@ -54,6 +54,19 @@ footer {
     &:active {
       color: $primary;
       background-color: $white;
+    }
+  }
+}
+
+#footer-text-links {
+  margin-bottom: 60px;
+  a {
+    font-size: smaller;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $white;
+    &:hover {
+      color: $primary;
     }
   }
 }

@@ -12020,7 +12020,7 @@ a > .ck-content code {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 60px;
+  margin-bottom: 15px;
 }
 .ck-content #footer-links a {
   display: flex;
@@ -12040,6 +12040,18 @@ a > .ck-content code {
   color: #D90479;
   background-color: #ffffff;
 }
+.ck-content #footer-text-links {
+  margin-bottom: 60px;
+}
+.ck-content #footer-text-links a {
+  font-size: smaller;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.ck-content #footer-text-links a:hover {
+  color: #D90479;
+}
 .ck-content #hyperluminal .text {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -12058,16 +12070,16 @@ a > .ck-content code {
 }
 .ck-content .btn, .ck-content button.link, .ck-content .button, .ck-content a.button, .ck-content .node-preview-container .node-preview-backlink {
   font-family: "Comfortaa", sans-serif;
-  text-transform: uppercase;
-  background-color: #D90479;
-  border: inherit;
-  border-radius: 20px;
-  padding: 10px 16px;
-  line-height: 1;
+  text-transform: uppercase !important;
+  background-color: #D90479 !important;
+  border: inherit !important;
+  border-radius: 20px !important;
+  padding: 10px 16px !important;
+  line-height: 1 !important;
 }
 .ck-content .btn:hover, .ck-content button.link:hover, .ck-content .button:hover, .ck-content .node-preview-container .node-preview-backlink:hover, .ck-content .btn:focus, .ck-content button.link:focus, .ck-content .button:focus, .ck-content .node-preview-container .node-preview-backlink:focus {
-  background-color: #F28D35;
-  border: inherit;
+  background-color: #F28D35 !important;
+  border: inherit !important;
 }
 .ck-content .region-nav-main {
   display: flex;
@@ -12448,6 +12460,43 @@ a > .ck-content code {
 .ck-content .ui-dialog .ui-dialog-titlebar-close {
   box-shadow: inherit;
   --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+.ck-content #mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.ck-content #mc_embed_signup_scroll h2, .ck-content #mc_embed_signup_scroll .h2,
+.ck-content #mc_embed_signup_scroll .indicates-required {
+  text-align: center !important;
+}
+.ck-content #mc_embed_signup_scroll > div.mc-field-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ck-content #mc_embed_signup_scroll > div.mc-field-group label {
+  font-family: "Comfortaa", sans-serif;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.ck-content #mc_embed_signup_scroll > div.mc-field-group input {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #ffffff;
+  background-color: inherit;
+  border-radius: 20px;
+  text-align: left;
+}
+.ck-content #mc_embed_signup_scroll > div.mc-field-group input:focus, .ck-content #mc_embed_signup_scroll > div.mc-field-group input:active {
+  border: 1px solid #D90479;
 }
 .ck-content .select2-container {
   box-sizing: border-box;

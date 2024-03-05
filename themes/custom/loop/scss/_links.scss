@@ -1,15 +1,15 @@
 .btn {
   font-family: $headings-font-family;
-  text-transform: uppercase;
-  background-color: $primary;
-  border: inherit;
-  border-radius: 20px;
-  padding: 10px 16px;
-  line-height: 1;
+  text-transform: uppercase !important;
+  background-color: $primary !important;
+  border: inherit !important;
+  border-radius: 20px !important;
+  padding: 10px 16px !important;
+  line-height: 1 !important;
 
   &:hover,
   &:focus {
-    background-color: $secondary;
-    border: inherit;
+    background-color: $secondary !important;
+    border: inherit !important;
   }
 }
