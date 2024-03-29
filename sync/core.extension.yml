@@ -51,6 +51,9 @@ module:
   responsive_menu: 0
   search: 0
   shortcut: 0
+  slick: 0
+  slick_ui: 0
+  slick_views: 0
   syslog: 0
   system: 0
   taxonomy: 0

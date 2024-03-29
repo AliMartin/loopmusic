@@ -348,7 +348,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: iain@stiffpromotions.co.uk
+      to_mail: 'iain@stiffpromotions.co.uk,lm@tailored-entertainment.com'
       to_options: {  }
       bcc_mail: info@alimartin.com
       bcc_options: {  }

@@ -14,6 +14,7 @@ dependencies:
   module:
     - contextual
     - file
+    - help
     - media
     - node
     - path
@@ -31,6 +32,7 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access help pages'
   - 'access media overview'
   - 'access toolbar'
   - 'access webform overview'
