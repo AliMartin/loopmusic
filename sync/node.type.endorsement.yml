@@ -11,7 +11,7 @@ third_party_settings:
 name: Endorsement
 type: endorsement
 description: 'Add an <em>endorsement</em> to the website which will typically be displayed in the footer.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

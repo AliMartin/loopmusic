@@ -12163,6 +12163,12 @@ a > .ck-content code {
   background-color: #ffffff;
   color: #D90479;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ck-content nav#block-loop-main-navigation,
+.ck-content #block-loop-enquirymenu {
+    font-size: 13px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .ck-content nav#block-loop-main-navigation {
     display: none;
