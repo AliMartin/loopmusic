@@ -12098,7 +12098,7 @@ a > .ck-content code {
 }
 .ck-content #block-loop-main-navigation > ul {
   flex-direction: row;
-  gap: 20px;
+  gap: 30px;
   justify-content: center !important;
   /* Underline styles */
   /* Scale from center */
@@ -12163,39 +12163,38 @@ a > .ck-content code {
   background-color: #ffffff;
   color: #D90479;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1199px) and (max-width: 1399px) {
   .ck-content nav#block-loop-main-navigation,
 .ck-content #block-loop-enquirymenu {
     font-size: 13px;
   }
+  .ck-content nav#block-loop-main-navigation > ul,
+.ck-content #block-loop-enquirymenu > ul {
+    gap: 20px;
+  }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
   .ck-content nav#block-loop-main-navigation {
     display: none;
   }
 }
 @media only screen and (max-width: 767px) {
-  .ck-content {
-    /*
-    #enquiry-menu a {
-      display: flex;
-      width: 36px;
-      height: 36px;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-    }
-
-    #enquiry-menu i {
-      margin: 0;
-    }
-    */
-  }
   .ck-content .menu-container {
     display: none;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 379px) {
+  .ck-content #block-loop-enquirymenu #enquiry-menu a {
+    padding: 9px;
+  }
+  .ck-content #block-loop-enquirymenu i {
+    margin: 0;
+  }
+  .ck-content #block-loop-enquirymenu span {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1199px) {
   .ck-content #block-loop-responsivemenumobileicon {
     display: none;
   }
@@ -12301,6 +12300,7 @@ a > .ck-content code {
   border-radius: 10px;
 }
 .ck-content .page-node-type-article main .region-content,
+.ck-content .page-node-type-testimonial main .region-content,
 .ck-content .page-node-type-landing-page main .region-content {
   text-align: center;
   max-width: 850px;
@@ -12325,6 +12325,65 @@ a > .ck-content code {
 .ck-content .page-node-type-gallery main .node__content li {
   border-radius: 10px;
   border: 1px solid #ffffff;
+}
+.ck-content .page-node-type-testimonial .field--name-field-venue {
+  margin-bottom: 30px;
+  font-size: large;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.ck-content .path-testimonials main .region-content {
+  text-align: center;
+}
+.ck-content .path-testimonials main #block-loop-page-title {
+  margin-bottom: 30px;
+}
+.ck-content .view-testimonials .view-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 90px;
+}
+.ck-content .view-testimonials .view-content .views-row {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 406px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ck-content .view-testimonials .view-content .views-row {
+    width: 325px;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .ck-content .view-testimonials .view-content .views-row {
+    width: 406px;
+  }
+}
+@media (max-width: 499px) {
+  .ck-content .view-testimonials .view-content .views-row {
+    width: 100%;
+  }
+}
+.ck-content .view-testimonials .view-content .views-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.ck-content .view-testimonials .view-content .views-row .views-field-title {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 300;
+  font-size: xx-large;
+  line-height: 1;
+}
+.ck-content .view-testimonials .view-content .views-row p {
+  margin: 0;
 }
 .ck-content #block-loop-curatorfeed {
   margin-top: 30px;
