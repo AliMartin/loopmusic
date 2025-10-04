@@ -18,3 +18,11 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+
+body.path-frontpage {
+  main {
+    .region-content {
+      text-align: center;
+    }
+  }
+}

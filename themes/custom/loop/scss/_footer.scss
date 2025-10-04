@@ -19,7 +19,7 @@ footer {
 
   .text {
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     font-size: 14px;
     line-height: 1;
     margin-bottom: 10px;
@@ -63,18 +63,26 @@ footer {
 
 #footer-text-links {
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
   a {
+    display: block;
     font-size: smaller;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: $white;
+    text-decoration: none;
     &:hover {
-      color: $primary;
+      color: $secondary;
     }
   }
 }
 
-#hyperluminal {
+#ultraluminal {
   .text {
     text-transform: uppercase;
     letter-spacing: 2px;
