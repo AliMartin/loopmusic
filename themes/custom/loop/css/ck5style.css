@@ -12093,6 +12093,7 @@ a > .ck-content code {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   position: relative;
+  font-size: 1rem;
   z-index: 10;
 }
 .ck-content footer .region-footer {
@@ -12389,6 +12390,7 @@ a > .ck-content code {
 }
 .ck-content .mm-menu_theme-white ul.mm-listview li.mm-listitem {
   font-family: "Comfortaa", sans-serif;
+  font-size: 1rem;
   line-height: 1;
   text-transform: uppercase;
   color: #000000;
