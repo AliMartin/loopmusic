@@ -2,3 +2,9 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+video_autoplay:
+  version: 1.x
+  js:
+    js/video-autoplay.js: {}
+  dependencies:
+    - core/drupal

@@ -11983,6 +11983,9 @@ a > .ck-content code {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 10;
 }
 .ck-content footer .region-footer {
   display: flex;
@@ -12070,6 +12073,8 @@ a > .ck-content code {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 15px;
+  position: relative;
+  z-index: 20;
 }
 .ck-content .btn, .ck-content button.link, .ck-content .button, .ck-content a.button, .ck-content .node-preview-container .node-preview-backlink {
   font-family: "Comfortaa", sans-serif;
@@ -12302,12 +12307,17 @@ a > .ck-content code {
 .ck-content .page-node-type-article main .region-content,
 .ck-content .page-node-type-testimonial main .region-content,
 .ck-content .page-node-type-landing-page main .region-content {
+  position: relative;
+  z-index: 10;
   text-align: center;
   max-width: 850px;
   margin: 50vh auto 90px auto;
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
   padding: 30px;
   border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.85);
 }
 .ck-content .page-node-type-multimedia main .region-content {
   text-align: center;
@@ -13099,6 +13109,23 @@ a > .ck-content code {
 }
 .ck-content .select2-container--classic.select2-container--open .select2-dropdown {
   border-color: #5897fb;
+}
+.ck-content .video-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* not negative */
+  overflow: hidden;
+  pointer-events: none;
+}
+.ck-content .video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire area */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 .ck-content .view-video-page {
   margin-top: 30px;

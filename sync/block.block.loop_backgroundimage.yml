@@ -9,7 +9,7 @@ dependencies:
 id: loop_backgroundimage
 theme: loop
 region: background_image
-weight: 0
+weight: -9
 provider: null
 plugin: background_image
 settings:

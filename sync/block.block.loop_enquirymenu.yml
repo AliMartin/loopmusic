@@ -11,7 +11,7 @@ dependencies:
 id: loop_enquirymenu
 theme: loop
 region: nav_main
-weight: -5
+weight: -8
 provider: null
 plugin: 'block_content:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
 settings:

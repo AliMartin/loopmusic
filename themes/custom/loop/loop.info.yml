@@ -5,6 +5,7 @@ core_version_requirement: '^9.4 || ^10'
 'base theme': bootstrap5
 libraries:
   - loop/global-styling
+  - loop/video_autoplay
 ckeditor_stylesheets:
   - css/style.css
 ckeditor5-stylesheets:
@@ -16,6 +17,7 @@ regions:
   nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   breadcrumb: Breadcrumbs
   background_image: 'Background image'
+  video_wallpaper: 'Video wallpaper'
   content: 'Main content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'

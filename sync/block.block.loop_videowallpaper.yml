@@ -1,0 +1,30 @@
+uuid: 0a6f2f49-d5e5-4c99-a099-fa7483507a27
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:968b6817-b28b-4ea6-9be7-c518a1d45c4e'
+  module:
+    - block_content
+    - system
+  theme:
+    - loop
+id: loop_videowallpaper
+theme: loop
+region: video_wallpaper
+weight: 0
+provider: null
+plugin: 'block_content:968b6817-b28b-4ea6-9be7-c518a1d45c4e'
+settings:
+  id: 'block_content:968b6817-b28b-4ea6-9be7-c518a1d45c4e'
+  label: 'Video wallpaper'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

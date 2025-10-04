@@ -97,6 +97,12 @@ set footer_classes = ' ' ~
   set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' )
    %}
 
+  {# Video wallpaper #}
+  {% block video_wallpaper %}
+    {% if page.video_wallpaper %}
+      {{ page.video_wallpaper }}
+    {% endif %}
+  {% endblock %}
 
   <div class="{{ b5_top_container }}">
     {% if page.breadcrumb %}
