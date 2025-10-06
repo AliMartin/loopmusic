@@ -43,19 +43,20 @@ $theme-colors: (
 $font-family-sans-serif: 'Lato', sans-serif;
 $font-family-base: $font-family-sans-serif;
 $font-size-base: 1.3rem;
-$line-height-base: 1.5;
+$line-height-base: 1.4;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 $body-color: $white;
 
 $headings-font-family: 'Comfortaa', sans-serif;
+$headings-line-height: 1.2;
 $headings-font-weight: 300;
 
-$h1-font-size: $font-size-base * 2.5;
-$h2-font-size: $font-size-base * 2;
-$h3-font-size: $font-size-base * 1.75;
-$h4-font-size: $font-size-base * 1.5;
-$h5-font-size: $font-size-base * 1.25;
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.6;
+$h3-font-size: $font-size-base * 1.4;
+$h4-font-size: $font-size-base * 1.2;
+$h5-font-size: $font-size-base * 1.1;
 $h6-font-size: $font-size-base;
 
 

@@ -12,6 +12,10 @@ ul.nav-tabs {
   justify-content: center;
 }
 
+ul {
+  list-style: disc;
+  padding-left: 35px;
+}
 
 // User
 .path-user {
@@ -49,11 +53,10 @@ ul.nav-tabs {
     .region-content {
       position: relative;
       z-index: 10;
-      // text-align: center;
       max-width: 850px;
       margin: 50vh auto 90px auto;
-      background-color: rgba(0,0,0,0.4);
-      padding: 30px;
+      background-color: rgba(0,0,0,0.2);
+      padding: 30px 30px 60px 30px;
       border-radius: 20px;
       border: 1px solid rgba(255,255,255,0.25);
       backdrop-filter: blur(10px);
@@ -61,6 +64,32 @@ ul.nav-tabs {
 
       h1 {
         text-align: center;
+      }
+
+      h2, h3 {
+        margin-top: 2.0rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .field--name-body > p:first-of-type {
+        font-family: $headings-font-family;
+        font-size: 1.4rem;
+        line-height: 1.4;
+      }
+
+      p {
+        margin-bottom: 0.8rem;
+      }
+
+      .media.media--type-image {
+        img {
+          border-radius: $border-radius;
+        }
+      }
+      figure.caption > figcaption {
+        margin: 0.5rem 0 0 0;
+        font-size: smaller;
+        font-weight: $font-weight-bold;
       }
     }
   }

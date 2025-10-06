@@ -89,6 +89,7 @@
         "drupal/entity_browser": "^2.10",
         "drupal/file_browser": "^1.4",
         "drupal/fitvids": "^2.0",
+        "drupal/gin": "^4.1",
         "drupal/honeypot": "^2.1",
         "drupal/image_widget_crop": "^2.4",
         "drupal/insert_view": "^3.0",

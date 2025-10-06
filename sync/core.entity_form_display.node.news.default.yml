@@ -5,11 +5,15 @@ dependencies:
   config:
     - field.field.node.news.body
     - field.field.node.news.field_image
+    - field.field.node.news.field_keywords
+    - field.field.node.news.field_metatags
     - node.type.news
   module:
     - media_library
+    - metatag
     - path
     - text
+    - yoast_seo
 id: node.news.default
 targetEntityType: node
 bundle: news
@@ -37,6 +41,24 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_keywords:
+    type: yoast_seo_widget
+    weight: 27
+    region: content
+    settings:
+      edit_title: false
+      edit_description: false
+      render_theme: gin
+      render_view_mode: teaser
+    third_party_settings: {  }
+  field_metatags:
+    type: metatag_firehose
+    weight: 26
+    region: content
+    settings:
+      sidebar: false
+      use_details: true
     third_party_settings: {  }
   langcode:
     type: language_select
