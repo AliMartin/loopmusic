@@ -17,7 +17,7 @@ entities:
   node:
     article:
       enable: true
-      embed: false
+      embed: true
       require: false
       group: ''
     page:
@@ -27,6 +27,36 @@ entities:
       group: ''
     webform:
       enable: true
+      embed: true
+      require: false
+      group: ''
+    endorsement:
+      enable: false
+      embed: false
+      require: false
+      group: ''
+    gallery:
+      enable: false
+      embed: false
+      require: false
+      group: ''
+    landing_page:
+      enable: true
+      embed: true
+      require: false
+      group: ''
+    multimedia:
+      enable: false
+      embed: false
+      require: false
+      group: ''
+    news:
+      enable: true
+      embed: true
+      require: false
+      group: ''
+    testimonial:
+      enable: false
       embed: false
       require: false
       group: ''

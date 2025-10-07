@@ -92,6 +92,7 @@
         "drupal/gin": "^4.1",
         "drupal/honeypot": "^2.1",
         "drupal/image_widget_crop": "^2.4",
+        "drupal/inline_entity_form": "^3.0@RC",
         "drupal/insert_view": "^3.0",
         "drupal/jquery_ui": "^1.6",
         "drupal/media_entity_soundcloud": "^3.1",
