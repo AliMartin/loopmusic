@@ -13067,6 +13067,56 @@ meter {
   all: revert;
 }
 
+h1, .h1 {
+  font-size: clamp(1.7rem, 1.5vw + 1.3rem, 2.3rem);
+}
+
+h2, .h2 {
+  font-size: clamp(1.4rem, 1.2vw + 1.2rem, 2.4rem);
+}
+
+h3, .h3 {
+  font-size: clamp(1.2rem, 1vw + 1rem, 2.1rem);
+}
+
+h4, .h4 {
+  font-size: clamp(1rem, 0.8vw + 0.9rem, 1.8rem);
+}
+
+h5, .h5 {
+  font-size: clamp(0.9rem, 0.5vw + 0.8rem, 1.54rem);
+}
+
+h6, .h6, .form-wrapper.accordion .accordion-item h2, .form-wrapper.accordion .accordion-item .h2 {
+  font-size: clamp(0.8rem, 0.3vw + 0.7rem, 1.3rem);
+}
+
+@media (max-width: 767.98px) {
+  h1, .h1 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+  }
+  h2, .h2 {
+    font-size: clamp(1.3rem, 1.5vw + 0.9rem, 1.6rem);
+  }
+  h3, .h3 {
+    font-size: clamp(1.1rem, 1vw + 0.8rem, 1.4rem);
+  }
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: clamp(1.9rem, 1vw + 1.8rem, 2.4rem);
+  }
+  h2, .h2 {
+    font-size: clamp(1.52rem, 0.8vw + 1.44rem, 1.92rem);
+  }
+  h3, .h3 {
+    font-size: clamp(1.33rem, 0.7vw + 1.26rem, 1.61rem);
+  }
+}
+body main {
+  font-size: clamp(1rem, 0.5vw + 0.9rem, 1.3rem);
+}
+
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -13442,7 +13492,7 @@ ul {
   position: relative;
   z-index: 10;
   max-width: 850px;
-  margin: 50vh auto 90px auto;
+  margin: 45vh auto 90px auto;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 30px 30px 60px 30px;
   border-radius: 20px;
@@ -13473,15 +13523,13 @@ ul {
 .page-node-type-landing-page main .region-content h3,
 .page-node-type-landing-page main .region-content .h3 {
   margin-top: 2rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 .page-node-type-article main .region-content .field--name-body > p:first-of-type,
 .page-node-type-news main .region-content .field--name-body > p:first-of-type,
 .page-node-type-testimonial main .region-content .field--name-body > p:first-of-type,
 .page-node-type-landing-page main .region-content .field--name-body > p:first-of-type {
-  font-family: "Comfortaa", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.4;
+  font-weight: 700;
 }
 .page-node-type-article main .region-content p,
 .page-node-type-news main .region-content p,
@@ -13494,6 +13542,7 @@ ul {
 .page-node-type-testimonial main .region-content .media.media--type-image img,
 .page-node-type-landing-page main .region-content .media.media--type-image img {
   border-radius: 7px;
+  margin-top: 0.5rem;
 }
 .page-node-type-article main .region-content figure.caption > figcaption,
 .page-node-type-news main .region-content figure.caption > figcaption,

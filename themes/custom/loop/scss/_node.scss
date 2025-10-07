@@ -54,7 +54,7 @@ ul {
       position: relative;
       z-index: 10;
       max-width: 850px;
-      margin: 50vh auto 90px auto;
+      margin: 45vh auto 90px auto;
       background-color: rgba(0,0,0,0.2);
       padding: 30px 30px 60px 30px;
       border-radius: 20px;
@@ -68,13 +68,14 @@ ul {
 
       h2, h3 {
         margin-top: 2.0rem;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.5rem;
       }
 
       .field--name-body > p:first-of-type {
-        font-family: $headings-font-family;
-        font-size: 1.4rem;
-        line-height: 1.4;
+        // font-family: $headings-font-family;
+        // font-size: larger;
+        // line-height: 1.4;
+        font-weight: 700;
       }
 
       p {
@@ -84,6 +85,7 @@ ul {
       .media.media--type-image {
         img {
           border-radius: $border-radius;
+          margin-top: 0.5rem;
         }
       }
       figure.caption > figcaption {
