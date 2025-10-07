@@ -49,6 +49,7 @@
 /.eslintrc.json
 /.gitattributes
 /.htaccess
+**/.DS_Store
 /autoload.php
 # /composer.json
 # /composer.lock
