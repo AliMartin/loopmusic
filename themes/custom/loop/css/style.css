@@ -13144,7 +13144,7 @@ footer .region-footer {
   margin-bottom: 10px;
 }
 #copyright img {
-  width: 200px;
+  width: 209px;
   height: auto;
 }
 
@@ -13152,15 +13152,15 @@ footer .region-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 15px;
 }
 #footer-links a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   text-decoration: none;
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -13170,8 +13170,8 @@ footer .region-footer {
   display: none;
 }
 #footer-links a:hover, #footer-links a:focus, #footer-links a:active {
-  color: #D90479;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #F28D35;
 }
 
 #footer-text-links {
@@ -13232,6 +13232,7 @@ header {
 
 .btn, button.link, .button, a.button, .node-preview-container .node-preview-backlink {
   font-family: "Comfortaa", sans-serif;
+  font-size: 1rem;
   text-transform: uppercase !important;
   background-color: #D90479 !important;
   border: inherit !important;
@@ -13242,6 +13243,11 @@ header {
 .btn:hover, button.link:hover, .button:hover, .node-preview-container .node-preview-backlink:hover, .btn:focus, button.link:focus, .button:focus, .node-preview-container .node-preview-backlink:focus {
   background-color: #F28D35 !important;
   border: inherit !important;
+}
+
+#book-now-button {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .region-nav-main {
@@ -13362,11 +13368,11 @@ header {
     display: none;
   }
 }
-@media only screen and (min-width: 1199px) {
+/* @media only screen and (min-width : 1199px) {
   #block-loop-responsivemenumobileicon {
     display: none;
   }
-}
+} */
 #block-loop-responsivemenumobileicon span.label {
   display: none;
 }
@@ -13494,7 +13500,7 @@ ul {
   max-width: 850px;
   margin: 45vh auto 90px auto;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 30px 30px 60px 30px;
+  padding: 30px 30px 90px 30px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);

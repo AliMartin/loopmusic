@@ -51,6 +51,11 @@
      - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element */
   /* apply back the draggable feature - exist only in Chromium and Safari */
   /* Revert Modal native behavior */
+  /* @media only screen and (min-width : 1199px) {
+    #block-loop-responsivemenumobileicon {
+      display: none;
+    }
+  } */
   /* Chrome/Opera/Safari */
   /* Firefox 19+ */
   /* IE 10+ */
@@ -12156,22 +12161,22 @@ a > .ck-content code {
   margin-bottom: 10px;
 }
 .ck-content #copyright img {
-  width: 200px;
+  width: 209px;
   height: auto;
 }
 .ck-content #footer-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 15px;
 }
 .ck-content #footer-links a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   text-decoration: none;
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -12181,8 +12186,8 @@ a > .ck-content code {
   display: none;
 }
 .ck-content #footer-links a:hover, .ck-content #footer-links a:focus, .ck-content #footer-links a:active {
-  color: #D90479;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #F28D35;
 }
 .ck-content #footer-text-links {
   margin-bottom: 60px;
@@ -12238,6 +12243,7 @@ a > .ck-content code {
 }
 .ck-content .btn, .ck-content button.link, .ck-content .button, .ck-content a.button, .ck-content .node-preview-container .node-preview-backlink {
   font-family: "Comfortaa", sans-serif;
+  font-size: 1rem;
   text-transform: uppercase !important;
   background-color: #D90479 !important;
   border: inherit !important;
@@ -12248,6 +12254,10 @@ a > .ck-content code {
 .ck-content .btn:hover, .ck-content button.link:hover, .ck-content .button:hover, .ck-content .node-preview-container .node-preview-backlink:hover, .ck-content .btn:focus, .ck-content button.link:focus, .ck-content .button:focus, .ck-content .node-preview-container .node-preview-backlink:focus {
   background-color: #F28D35 !important;
   border: inherit !important;
+}
+.ck-content #book-now-button {
+  text-align: center;
+  margin-top: 30px;
 }
 .ck-content .region-nav-main {
   display: flex;
@@ -12361,11 +12371,6 @@ a > .ck-content code {
     margin: 0;
   }
   .ck-content #block-loop-enquirymenu span {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1199px) {
-  .ck-content #block-loop-responsivemenumobileicon {
     display: none;
   }
 }
@@ -12488,7 +12493,7 @@ a > .ck-content code {
   max-width: 850px;
   margin: 45vh auto 90px auto;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 30px 30px 60px 30px;
+  padding: 30px 30px 90px 30px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);

@@ -1,5 +1,6 @@
 .btn {
   font-family: $headings-font-family;
+  font-size: 1rem;
   text-transform: uppercase !important;
   background-color: $primary !important;
   border: inherit !important;
@@ -12,4 +13,9 @@
     background-color: $secondary !important;
     border: inherit !important;
   }
+}
+
+#book-now-button {
+  text-align: center;
+  margin-top: 30px;
 }

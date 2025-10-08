@@ -26,7 +26,7 @@ footer {
     margin-bottom: 10px;
   }
   img {
-    width: 200px;
+    width: 209px;
     height: auto;
   }
 }
@@ -35,15 +35,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 15px;
 
   a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     text-decoration: none;
     color: $white;
     border: 1px solid $white;
@@ -56,8 +56,8 @@ footer {
     &:hover,
     &:focus,
     &:active {
-      color: $primary;
-      background-color: $white;
+      color: $white;
+      background-color: $secondary;
     }
   }
 }

@@ -8,6 +8,7 @@ dependencies:
     - blazy
     - editor
     - insert_view
+    - linkit
     - media
     - slick
 _core:
@@ -76,6 +77,14 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
+      media_substitution: metadata
   media_embed:
     id: media_embed
     provider: media
@@ -96,7 +105,7 @@ filters:
         title: '0'
       optionset: default
       layout: ''
-      admin_uri: '/admin/config/content/formats/manage/full_html?destination=/admin/config/content/formats'
+      admin_uri: '/admin/config/content/formats/manage/full_html?destination=/admin/config/content/formats&ajax_form=1&_wrapper_format=drupal_ajax'
       background: false
       box_caption: ''
       box_caption_custom: ''
