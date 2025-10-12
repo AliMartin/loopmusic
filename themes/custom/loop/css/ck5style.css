@@ -12241,19 +12241,24 @@ a > .ck-content code {
   position: relative;
   z-index: 20;
 }
-.ck-content .btn, .ck-content button.link, .ck-content .button, .ck-content a.button, .ck-content .node-preview-container .node-preview-backlink {
+.ck-content .btn, .ck-content button.link, .ck-content .button, .ck-content a.button, .ck-content .node-preview-container .node-preview-backlink,
+.ck-content .cm-btn {
   font-family: "Comfortaa", sans-serif;
   font-size: 1rem;
   text-transform: uppercase !important;
   background-color: #D90479 !important;
+  color: #ffffff !important;
   border: inherit !important;
   border-radius: 20px !important;
   padding: 10px 16px !important;
   line-height: 1 !important;
 }
-.ck-content .btn:hover, .ck-content button.link:hover, .ck-content .button:hover, .ck-content .node-preview-container .node-preview-backlink:hover, .ck-content .btn:focus, .ck-content button.link:focus, .ck-content .button:focus, .ck-content .node-preview-container .node-preview-backlink:focus {
+.ck-content .btn:hover, .ck-content button.link:hover, .ck-content .button:hover, .ck-content .node-preview-container .node-preview-backlink:hover, .ck-content .btn:focus, .ck-content button.link:focus, .ck-content .button:focus, .ck-content .node-preview-container .node-preview-backlink:focus,
+.ck-content .cm-btn:hover,
+.ck-content .cm-btn:focus {
   background-color: #F28D35 !important;
   border: inherit !important;
+  color: #ffffff !important;
 }
 .ck-content #book-now-button {
   text-align: center;
@@ -13389,6 +13394,47 @@ a > .ck-content code {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 0 0 10px 10px;
   padding: 10px;
+}
+.ck-content #klaro #klaro-cookie-notice,
+.ck-content #klaro .cm-modal {
+  border-radius: 20px;
+  border: 5px solid #D90479;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.85);
+  outline: inherit;
+}
+.ck-content #klaro #klaro-cookie-notice a.cn-learn-more,
+.ck-content #klaro .cm-modal a.cn-learn-more {
+  text-decoration: underline;
+}
+.ck-content #klaro #klaro-cookie-notice .cn-buttons button,
+.ck-content #klaro .cm-modal .cn-buttons button {
+  width: inherit;
+}
+.ck-content #klaro .slider {
+  background-color: #F28D35;
+}
+.ck-content #klaro .cookie-modal .cm-list-description,
+.ck-content #klaro .context-notice .cm-list-description,
+.ck-content #klaro .cookie-notice .cm-list-description {
+  font-size: 0.85em;
+  padding: 0;
+}
+.ck-content #klaro .label.cm-list-label {
+  min-height: 20px;
+}
+.ck-content #klaro button.hide {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #F28D35;
+  outline: inherit;
+}
+.ck-content #klaro button.hide svg {
+  stroke: #ffffff;
 }
 
 /*# sourceMappingURL=ck5style.css.map */

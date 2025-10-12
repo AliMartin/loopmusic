@@ -13230,19 +13230,24 @@ header {
   z-index: 20;
 }
 
-.btn, button.link, .button, a.button, .node-preview-container .node-preview-backlink {
+.btn, button.link, .button, a.button, .node-preview-container .node-preview-backlink,
+.cm-btn {
   font-family: "Comfortaa", sans-serif;
   font-size: 1rem;
   text-transform: uppercase !important;
   background-color: #D90479 !important;
+  color: #ffffff !important;
   border: inherit !important;
   border-radius: 20px !important;
   padding: 10px 16px !important;
   line-height: 1 !important;
 }
-.btn:hover, button.link:hover, .button:hover, .node-preview-container .node-preview-backlink:hover, .btn:focus, button.link:focus, .button:focus, .node-preview-container .node-preview-backlink:focus {
+.btn:hover, button.link:hover, .button:hover, .node-preview-container .node-preview-backlink:hover, .btn:focus, button.link:focus, .button:focus, .node-preview-container .node-preview-backlink:focus,
+.cm-btn:hover,
+.cm-btn:focus {
   background-color: #F28D35 !important;
   border: inherit !important;
+  color: #ffffff !important;
 }
 
 #book-now-button {
@@ -14521,6 +14526,48 @@ body.path-frontpage main .region-content {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 0 0 10px 10px;
   padding: 10px;
+}
+
+#klaro #klaro-cookie-notice,
+#klaro .cm-modal {
+  border-radius: 20px;
+  border: 5px solid #D90479;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.85);
+  outline: inherit;
+}
+#klaro #klaro-cookie-notice a.cn-learn-more,
+#klaro .cm-modal a.cn-learn-more {
+  text-decoration: underline;
+}
+#klaro #klaro-cookie-notice .cn-buttons button,
+#klaro .cm-modal .cn-buttons button {
+  width: inherit;
+}
+#klaro .slider {
+  background-color: #F28D35;
+}
+#klaro .cookie-modal .cm-list-description,
+#klaro .context-notice .cm-list-description,
+#klaro .cookie-notice .cm-list-description {
+  font-size: 0.85em;
+  padding: 0;
+}
+#klaro .label.cm-list-label {
+  min-height: 20px;
+}
+#klaro button.hide {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #F28D35;
+  outline: inherit;
+}
+#klaro button.hide svg {
+  stroke: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

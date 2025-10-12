@@ -96,6 +96,7 @@
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/insert_view": "^3.0",
         "drupal/jquery_ui": "^1.6",
+        "drupal/klaro": "^3.0",
         "drupal/linkit": "^7.0",
         "drupal/media_entity_soundcloud": "^3.1",
         "drupal/metatag": "^2.2",
