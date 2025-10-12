@@ -268,3 +268,20 @@ ul {
     }
   }
 }
+
+
+// Tables
+table.table {
+  font-size: 0.8rem;
+
+  tbody > tr > * {
+    --bs-table-bg-type: inherit;
+    background-color: rgba(0,0,0,0.2);
+    color: $white;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+  }
+
+  tbody > tr:last-of-type > * {
+    border-bottom: none;
+  }
+}

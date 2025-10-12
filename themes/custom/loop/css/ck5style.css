@@ -12685,6 +12685,18 @@ a > .ck-content code {
 .ck-content #block-loop-curatorfeed article .crt-post-share {
   display: none;
 }
+.ck-content table.table {
+  font-size: 0.8rem;
+}
+.ck-content table.table tbody > tr > * {
+  --bs-table-bg-type: inherit;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.ck-content table.table tbody > tr:last-of-type > * {
+  border-bottom: none;
+}
 .ck-content body.path-webform main .region-content,
 .ck-content body.page-node-type-webform main .region-content {
   max-width: 650px;
