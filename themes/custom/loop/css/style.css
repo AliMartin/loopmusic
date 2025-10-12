@@ -13153,7 +13153,7 @@ footer .region-footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 #footer-links a {
   display: flex;
@@ -13174,23 +13174,26 @@ footer .region-footer {
   background-color: #F28D35;
 }
 
-#footer-text-links {
+nav#block-loop-footer ul {
   margin-bottom: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
-#footer-text-links a {
+nav#block-loop-footer ul a {
   display: block;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: smaller;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #ffffff;
   text-decoration: none;
 }
-#footer-text-links a:hover {
+nav#block-loop-footer ul a:hover {
   color: #F28D35;
 }
 

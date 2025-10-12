@@ -12169,7 +12169,7 @@ a > .ck-content code {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .ck-content #footer-links a {
   display: flex;
@@ -12189,23 +12189,26 @@ a > .ck-content code {
   color: #ffffff;
   background-color: #F28D35;
 }
-.ck-content #footer-text-links {
+.ck-content nav#block-loop-footer ul {
   margin-bottom: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
-.ck-content #footer-text-links a {
+.ck-content nav#block-loop-footer ul a {
   display: block;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: smaller;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #ffffff;
   text-decoration: none;
 }
-.ck-content #footer-text-links a:hover {
+.ck-content nav#block-loop-footer ul a:hover {
   color: #F28D35;
 }
 .ck-content #ultraluminal .text {

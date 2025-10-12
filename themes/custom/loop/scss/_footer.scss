@@ -36,7 +36,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   a {
     display: flex;
@@ -62,16 +62,19 @@ footer {
   }
 }
 
-#footer-text-links {
+nav#block-loop-footer ul {
   margin-bottom: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 
   a {
     display: block;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: smaller;
     text-transform: uppercase;
     letter-spacing: 1px;
