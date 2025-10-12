@@ -12266,6 +12266,7 @@ a > .ck-content code {
 .ck-content #book-now-button {
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 90px;
 }
 .ck-content .region-nav-main {
   display: flex;
