@@ -13379,9 +13379,6 @@ a > .ck-content code {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-.ck-content body.path-frontpage main .region-content {
-  text-align: center;
-}
 .ck-content .view-video-page {
   margin-top: 30px;
   margin-bottom: 90px;
