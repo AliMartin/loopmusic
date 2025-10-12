@@ -13448,5 +13448,19 @@ a > .ck-content code {
 .ck-content #klaro button.hide svg {
   stroke: #ffffff;
 }
+.ck-content .responsive-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1.5rem; /* Add space below the video */
+}
+.ck-content .responsive-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /*# sourceMappingURL=ck5style.css.map */
