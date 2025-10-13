@@ -12703,12 +12703,17 @@ a > .ck-content code {
 }
 .ck-content body.path-webform main .region-content,
 .ck-content body.page-node-type-webform main .region-content {
-  max-width: 650px;
+  max-width: 700px;
   text-align: center;
-  margin: 50vh auto 90px auto;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 30px;
+  position: relative;
+  z-index: 10;
+  margin: 25vh auto 90px auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 30px 30px 90px 30px;
   border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.85);
 }
 .ck-content .form-control::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
