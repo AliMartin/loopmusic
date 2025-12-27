@@ -6,12 +6,16 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_attachments
     - field.field.node.article.field_image
+    - field.field.node.article.field_keywords
+    - field.field.node.article.field_metatags
     - field.field.node.article.field_tags
     - node.type.article
   module:
     - file
+    - metatag
     - text
     - user
+    - yoast_seo
 _core:
   default_config_hash: 7fb0j9HnIXfP9ndewzgPPzzeX_SV532wuYpkscrCMCk
 id: node.article.default
@@ -42,6 +46,20 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_keywords:
+    type: yoastseo_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_tags:
     type: entity_reference_label

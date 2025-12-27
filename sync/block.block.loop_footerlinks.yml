@@ -11,7 +11,7 @@ dependencies:
 id: loop_footerlinks
 theme: loop
 region: footer
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_content:ed0411cb-9623-438e-a65c-e57f84be85b8'
 settings:

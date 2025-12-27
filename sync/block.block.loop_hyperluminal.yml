@@ -11,7 +11,7 @@ dependencies:
 id: loop_hyperluminal
 theme: loop
 region: footer
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:f0c53c8e-17e4-4e12-bcc4-c1cb04a80ea1'
 settings:

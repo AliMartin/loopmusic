@@ -30,6 +30,5 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      article: article
       landing_page: landing_page
       news: news

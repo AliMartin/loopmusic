@@ -6,13 +6,17 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_attachments
     - field.field.node.article.field_image
+    - field.field.node.article.field_keywords
+    - field.field.node.article.field_metatags
     - field.field.node.article.field_tags
     - node.type.article
   module:
     - file
     - media_library
+    - metatag
     - path
     - text
+    - yoast_seo
 _core:
   default_config_hash: ewbd6G2uX456-bgwseM2Q-KQG3RkASoyHmTh-XR3oLU
 id: node.article.default
@@ -49,6 +53,24 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_keywords:
+    type: yoast_seo_widget
+    weight: 27
+    region: content
+    settings:
+      edit_title: false
+      edit_description: false
+      render_theme: gin
+      render_view_mode: default
+    third_party_settings: {  }
+  field_metatags:
+    type: metatag_firehose
+    weight: 26
+    region: content
+    settings:
+      sidebar: false
+      use_details: true
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags

@@ -369,7 +369,7 @@ display:
       menu:
         type: normal
         title: Testimonials
-        weight: -47
+        weight: -46
         menu_name: main
         parent: ''
     cache_metadata:

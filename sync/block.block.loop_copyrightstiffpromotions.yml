@@ -11,7 +11,7 @@ dependencies:
 id: loop_copyrightstiffpromotions
 theme: loop
 region: footer
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:4c608482-c5fd-4b5c-b5ab-1dafd063b65f'
 settings:
