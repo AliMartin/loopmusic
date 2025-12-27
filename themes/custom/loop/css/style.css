@@ -13717,6 +13717,12 @@ table.table tbody > tr:last-of-type > * {
   border-bottom: none;
 }
 
+/* Instagram embeds */
+div[data-name=instagram] iframe {
+  display: block;
+  margin: 30px auto 15px !important;
+}
+
 body.path-webform main .region-content,
 body.page-node-type-webform main .region-content {
   max-width: 700px;

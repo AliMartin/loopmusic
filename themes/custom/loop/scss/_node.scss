@@ -285,3 +285,10 @@ table.table {
     border-bottom: none;
   }
 }
+
+
+/* Instagram embeds */
+div[data-name="instagram"] iframe {
+  display: block;
+  margin: 30px auto 15px !important;
+}

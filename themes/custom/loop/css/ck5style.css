@@ -56,6 +56,7 @@
       display: none;
     }
   } */
+  /* Instagram embeds */
   /* Chrome/Opera/Safari */
   /* Firefox 19+ */
   /* IE 10+ */
@@ -12700,6 +12701,10 @@ a > .ck-content code {
 }
 .ck-content table.table tbody > tr:last-of-type > * {
   border-bottom: none;
+}
+.ck-content div[data-name=instagram] iframe {
+  display: block;
+  margin: 30px auto 15px !important;
 }
 .ck-content body.path-webform main .region-content,
 .ck-content body.page-node-type-webform main .region-content {
