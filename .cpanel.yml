@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hyperlum/loopmusic.uk
+    - export DEPLOYPATH=/home/acaddcfs/loopmusic.uk
     - /bin/cp -r * $DEPLOYPATH
