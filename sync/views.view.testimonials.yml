@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_image
     - node.type.testimonial
-    - system.menu.main
   module:
     - node
     - text
@@ -367,11 +366,14 @@ display:
       display_extenders: {  }
       path: testimonials
       menu:
-        type: normal
+        type: none
         title: Testimonials
+        description: ''
         weight: -46
+        expanded: false
         menu_name: main
         parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

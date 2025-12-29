@@ -6,3 +6,24 @@ header {
   z-index: 20;
 }
 
+#header-container-left {
+  .navbar-brand img {
+    max-height: 50px;
+  }
+}
+
+#header-container-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-container-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .region-nav-additional {
+    display: flex;
+  }
+}

@@ -56,24 +56,32 @@ set footer_classes = ' ' ~
   (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
 %}
 
-<header>
-  {{ page.header }}
 
-  {% if page.nav_branding or page.nav_main or page.nav_additional %}
-  <nav class="{{ nav_classes }}">
-    <div class="{{ b5_top_container }} d-flex">
-      {{ page.nav_branding }}
 
-      <div class="justify-content-md-end">
-        {{ page.nav_main }}
+<header role="banner">
+
+  <div class="container">
+
+    <div class="row">
+      <div id="header-container-left" class="col-2 col-sm-3 col-md-2">
+        {{ page.nav_branding }}
+      </div>
+      <div id="header-container-middle" class="col-8 col-sm-6 col-md-8">
+        {{ page.upper_cta }}
+      </div>
+      <div id="header-container-right" class="col-2 col-sm-3 col-md-2">
         {{ page.nav_additional }}
       </div>
-
     </div>
-  </nav>
-  {% endif %}
+
+    <div class="row">
+      {{ page.nav_main }}
+    </div>
+
+  </div>
 
 </header>
+
 
 {# Background Image #}
 {% block background_image %}

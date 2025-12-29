@@ -10,8 +10,8 @@ dependencies:
     - loop
 id: loop_enquirymenu
 theme: loop
-region: nav_main
-weight: -8
+region: upper_cta
+weight: -9
 provider: null
 plugin: 'block_content:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
 settings:

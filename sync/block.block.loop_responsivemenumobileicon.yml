@@ -8,8 +8,8 @@ dependencies:
     - loop
 id: loop_responsivemenumobileicon
 theme: loop
-region: nav_main
-weight: -7
+region: nav_additional
+weight: -9
 provider: null
 plugin: responsive_menu_toggle
 settings:
