@@ -14766,6 +14766,7 @@ fieldset.webform-select2 .select2-search {
 .view-video-page .media--type-remote-video img {
   border-radius: 10px 10px 0 0;
 }
+.view-video-page .field--name-field-media-title,
 .view-video-page .field--name-name {
   max-width: 400px;
   font-family: "Comfortaa", sans-serif;

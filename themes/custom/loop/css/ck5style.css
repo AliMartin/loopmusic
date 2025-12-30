@@ -13629,6 +13629,7 @@ a > .ck-content code {
 .ck-content .view-video-page .media--type-remote-video img {
   border-radius: 10px 10px 0 0;
 }
+.ck-content .view-video-page .field--name-field-media-title,
 .ck-content .view-video-page .field--name-name {
   max-width: 400px;
   font-family: "Comfortaa", sans-serif;
